@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sonicwall Config Edit", "Sonicwall Config Edit\Sonicwall Config Edit.vbproj", "{E7C11F03-104C-4364-AD1C-A765CFA5C9AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7C11F03-104C-4364-AD1C-A765CFA5C9AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C11F03-104C-4364-AD1C-A765CFA5C9AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C11F03-104C-4364-AD1C-A765CFA5C9AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C11F03-104C-4364-AD1C-A765CFA5C9AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A05E239E-5617-4A91-9728-48F9FB5E8026}
+	EndGlobalSection
+EndGlobal
