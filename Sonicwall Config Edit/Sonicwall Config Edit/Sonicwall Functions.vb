@@ -12,18 +12,21 @@ Public Class Sonicwall_Functions
     'Open decoded file
     'Replace All “&” With “\n”
     Public Function read(file As String)
-        decode(readfile(file))
+        Return breakUpLines(decode(readfile(file)))
     End Function
     Private Function readfile(path) As Byte()
         Return File.ReadAllBytes(path)
     End Function
 
     Private Function decode(bytes As Byte()) As String
-        Dim b64String As String = ToBase64String(bytes)
-        Dim bytDecoded As Byte() = FromBase64String(b64String)
-        ReDim Preserve bytDecoded(bytDecoded.Length - 4)
+        Dim strStart As String = enc8.GetString(bytes)
+        strStart = strStart.Replace("&&", "")
+        Dim bytDecoded As Byte() = FromBase64String(strStart)
         Dim strDecoded As String = enc8.GetString(bytDecoded)
         Return strDecoded
     End Function
 
+    Function breakUpLines(config As String) As String
+        Return config.Replace("&", vbCrLf)
+    End Function
 End Class
